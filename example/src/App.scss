@@ -1,0 +1,38 @@
+body {
+    &[data-count-hidden] {
+        .App {
+            position: fixed;
+            width: 100%;
+            z-index: -2;
+
+            height: 100%;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+
+    &[data-hidden-scroll] {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &[data-hidden-app] {
+        .App_contain {
+            display: none;
+        }
+    }
+
+    &[data-hidden-header] {
+        .AppHeader {
+            display: none;
+        }
+    }
+}
+
+.App {
+    position: relative;
+}

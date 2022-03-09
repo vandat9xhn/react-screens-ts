@@ -1,10 +1,6 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import * as screen_types from './type/floors';
+import { useScreensFloors } from './hooks/useScreensFloors';
+import Screens from './components/screen/_main/Screens';
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+// 
+export { Screens, screen_types, useScreensFloors };

@@ -1,0 +1,12 @@
+.ScreenFloors-inactive {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.ScreenFloors-active {
+    position: relative;
+    background-color: #f4f4f4cc;
+}
+.ScreenFloors-none {
+    display: none;
+}
